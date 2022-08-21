@@ -1,0 +1,7 @@
+A simple n-gram model would not be able to capture all of dependencies in one sentence.
+
+n-gram model will not be able to encode information seen previously in the datset, as a result, the perplexity will increase. (The higher the perplexity, the worse the model is)
+
+n-gram models takes up too much space and memory. It is inefficient and too slow. 
+
+However, n-gram allow us better understand deep learning.
