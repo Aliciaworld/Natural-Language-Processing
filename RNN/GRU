@@ -1,0 +1,2 @@
+GRU: gated recurrent unit, simplied versions of LSTMs;
+GRU tackle the loss of relevant information for long sequences of words
