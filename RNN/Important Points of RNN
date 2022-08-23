@@ -1,0 +1,17 @@
+RNN help mitigate the n-gram problem(end up using a lot of RAM and memory), which outperform N-grams in language generation tasks.
+
+RNN not limited to looking at just previous n words;
+RNN propogate information from the beginning of the sentence to the end. Actually its hidden states propogate information through time.
+RNN have the same number of parameters for word sequences of differenct length.
+
+RNN applications and methods:
+sentiment classifier---many to one
+generate a caption for an image---one to many
+machine translation---many to many
+give score and precit winner--- one to one
+
+Problem of RNN: gradient vanishing
+
+Cost function for RNN: cross entropy loss 
+
+
