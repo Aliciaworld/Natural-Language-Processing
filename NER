@@ -1,0 +1,3 @@
+NER: named entity recognition
+NER is a fast and efficient way to scan text for certain kinds of information.
+NER systems locate and extract named entity from text, which allows you to find places, organizations, names and times and dates.
