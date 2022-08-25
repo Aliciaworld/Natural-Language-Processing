@@ -14,7 +14,11 @@ RNN advantage and disadvantage:
     Disadvantage:
     1). struggles to capture long term dependencies
     2). prone to vanishing or exploding gradients, both of which can cause model training to fail
-        vanishing gradients(RNN): partial derivatives < 1
+        vanishing gradients(RNN): 
+            . partial derivatives < 
+            . Adding layers to a neural network introduces multiplicative effects in both forward and backward propagation. 
+            . Multiplied together across many layers, their product can be vanishingly small! 
+            . This results in weights not being updated in the front layers and training not progressing.
         exploding gradients(RNN): partial derivatives > 1
 
 
@@ -41,4 +45,7 @@ Other important points:
     a) sigmoid output between 0 and 1;
     b) sigmoid activation functions with different trainable parameters are applied to the input and previous states for the three gates;
 2) tanh shrinks arguments to be [-1, 1], which prevent any of values from current inputs from becoming so large that make other values insignificant.
+
+references:
+https://github.com/amanjeetsahu/Natural-Language-Processing-Specialization/blob/master/Natural%20Language%20Processing%20with%20Sequence%20Models/Week%203/C3_W3_Lecture_Notebook_Vanishing_Gradients.ipynb
                           
