@@ -1,0 +1,42 @@
+This is notes from Coursera: NIP with Sequence Models: LSTMs and named entity recognition
+
+LSTM: 1) long short term memory
+      2) best knows solution to the vanishing gradients problems
+      3) learn when to remember and when to forget
+
+RNN advantage and disadvantage:
+    Advantage:
+    1). Capture dependencies within a short range;
+    2). take up less RAM than other n-gram models
+    
+    Disadvantage:
+    1). struggles to capture long term dependencies
+    2). prone to vanishing or exploding gradients, both of which can cause model training to fail
+        vanishing gradients(RNN): partial derivatives < 1
+        exploding gradients(RNN): partial derivatives > 1
+
+
+LSTM UNIT:
+Basic Composition:
+1) cell state: memory of the neural network and gets modified using information from the input and previous hidden states
+                  
+2) hidden state: where computations are performed during training to decide on what changes to make;
+
+3) multiple gates: decide which information is kept and selected as ouutput; updated cell and hidden states in the neural network; allow gradients to avoid vanishing and exploding problem;
+    3.1) forget gate: 
+        a) cell state goes through the forget gate
+        b) which information from the cell state is no longer importance and can thrown away by using inputs and previsou hidden sates
+    
+    3.2) input gate:
+        a) information to be stored
+        b) which information from the inputs and hidden states is revelant. So it can be added to the next cell state.
+    
+    3.3) output gate:
+        a) determine which information from the cell state can be used as output and stored in the hidden state at the given timestep.
+ 
+Other important points:
+1) sigmoid activation functions: 
+    a) sigmoid output between 0 and 1;
+    b) sigmoid activation functions with different trainable parameters are applied to the input and previous states for the three gates;
+2) tanh shrinks arguments to be [-1, 1], which prevent any of values from current inputs from becoming so large that make other values insignificant.
+                          
