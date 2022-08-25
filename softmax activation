@@ -1,0 +1,5 @@
+Softmax is a mathematical function that converts a vector of numbers into a vector of probabilities. The network is configured to output N values, one for each class in the classification task, and the softmax function is used to normalize the outputs, converting them from weighted sum values into probabilies that sum to one.
+
+Softmax is used as activation function for multi-calss classification problems, it usually be used in a neural network model.
+
+A neural network model requires an activation function in the output layer of the model to make the prediction of multinomial probability distribution.
