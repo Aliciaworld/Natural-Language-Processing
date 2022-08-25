@@ -3,6 +3,8 @@ This is notes from Coursera: NIP with Sequence Models: LSTMs and named entity re
 LSTM: 1) long short term memory
       2) best knows solution to the vanishing gradients problems
       3) learn when to remember and when to forget
+      4) In LSTM, all sequences need to be same size, which means that they should use "padding" to fill empty spaces. 
+      5) When evaluate, mask padding
 
 RNN advantage and disadvantage:
     Advantage:
