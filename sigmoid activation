@@ -1,0 +1,5 @@
+Sigmoid activation function is also called the logistic function. Regardless of the input, the function always outputs a value between 0 and 1. The form of the function is an s-shape between 0 and 1 with the vertical or middle of the S at 0.5.
+
+This allows very large values given as the weighted sum of the input to be output as 1.0 and very samall or negative values to be mapped to 0.0.
+
+The sigmoid activation is an ideal activation function for a binary classification problem where the output is interpreted as a Binomial probability distribution.
