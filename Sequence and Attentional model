@@ -1,0 +1,5 @@
+Recuurent models typically take in a sequence in the order it is wirtten and use that to output a sequence. Each element in the sequence is associated with its step in computation time t. These models generate a sequence of hidden states, as a function of the previous hidden state and the input for position t.
+
+** The sequential nature of models(such as RNNs, LSTMs, GRUs) does not allow for parallelization within training examples. Because if you rely on sequences and you need to know the beginning of a text before being able to compute sth about the ending of it, then you can not use parallel computing. You have to wait untill the initial computation are complete. This is not good, because if your text is too long, then 1) it will take a long time for you to process it and 2) you will lose a good amount of information mentioned earlier in the text as you approach the end.
+
+** Attention mechanism allow modeling of dependencies without caring too much about their distance in the input or output sequences.
