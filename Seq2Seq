@@ -1,0 +1,8 @@
+Seq2Seq, Sequence-to-Sequence learning, is about training models, such as to convert sequences(sentences) in one language to sequences(sentences) in another language.
+
+Seq2Seq: a) A type of Encoder-Decoder model using RNN. 
+         b) In Seq2Seq, a RNN layer acts as "encoder" , another RNN layer acts as "decoder".
+         c) Maps variable-length sequences, which means inputs and outputs length can be difference, to fixed-length memory, which means if the inputs is larger than the memory, an information bottleneck can occur.
+         
+Traditional Seq2Seq model use the final hidden states of the encoder as the inital hidden state of the decoder. The forces the encoder to store the meaning of the entire input sequence into this one hidden state.
+
