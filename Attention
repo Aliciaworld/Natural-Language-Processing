@@ -1,0 +1,22 @@
+Attention:
+1) originally developed for machine translation.
+2) make the model focus on specific hidden states at every step instead of having to memorize the entire input sentence.
+    a). Instead of using only the final hiddent states, we can pass all the hidden states to the decoder.
+    b). To avoid retaining all the hidden states for each input step in memory, we can combine the hidden states into "context vector". This operation is called point-wise addition. 
+    c). Before point-wise addition operation, we will give more weights to more important words.
+3) The goal of attention layer is to return a context vector that contains the relevant information from the encoder state.
+4) The attention is a layer that left the model focus on what's important.
+5) The attention layer outpus context vectors for each query. Context vectors are weighted sumes of the values where the similarity between the queries and keys determines the weighs assigned to each value.
+
+
+Scale dot-product attention:
+1) consists of two matrix multiplication, one softmax, and no neural networks;
+2) three key elements: queries, keys and values, which are used for information retrieval inside the Attention Layer.
+3) The similarity between words is called alignment. 
+4) The query and key vector(Q * K superscript T) are multipled together to get a matrix of alignment scores.
+5) The square root of (d subsript K) improved the model performance for longer model sizes, and could be seen as a regularization constants.
+6) The alignment scores  are converted to weights using the softmax function, such that the weights for each query sum to one.
+7) Finally the weights and the value matrices are multiplied to get the attention vectors for each query.
+    
+  
+  
