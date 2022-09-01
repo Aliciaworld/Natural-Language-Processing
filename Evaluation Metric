@@ -1,0 +1,15 @@
+1. BLEU score(can be thought as precision)
+    . Bilingual evaluation understudy
+    . Compare candidate translations to reference(human) translations
+    . range(0,1)
+    . closer to 1, better
+
+2. Rouge score(can be though as recall)
+    . recall oriented understuy of gisting evaluation
+    . there are many version of rouge, here we'll use Rouge-N
+
+3. F1=2 * BLEU * Rouge-N/(BLEU - Rouge-N)
+
+Disadvantege of these two metric:
+    . doesn't consider semantic meaning
+    . doesn't consider sentence structure
