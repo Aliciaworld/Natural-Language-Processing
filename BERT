@@ -1,0 +1,15 @@
+Applications of BERT:
+  1. Sentiment analysis
+  2. Question answering: chatbots
+  3. Text prediction: predicts text when writing an eamil
+  4. Text generation: wirte an article about any topic with just a few sentence inputs
+  5. Summarization: quickly summarize long legal contracts
+  6. Polysemy resolution: words have multiple meanings based on the surrounding text.
+  
+  
+BERT: Bidirectional Encoder Representation from Transformer
+BERT need the input to be decorated with extra metadata:
+    1) Token embedding: [CLS] token is added to the input word, [SEP] token is inserted at the end of each sentence.
+    2) Segment embedding: marker indciating sentence A or B is added to each token.
+    3) Position embedding: positional embedding is added to each token to indicate its position in the sentence.
+  
