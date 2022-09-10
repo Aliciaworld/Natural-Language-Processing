@@ -1,0 +1,4 @@
+Transformer architecture makes it possible to parallelize ML training extremely efficiently.
+Transformers use an attention mechanism to observe relationships between words.
+
+Transformer has encoder and decoder layer. But BERT doesn't use decoder.
