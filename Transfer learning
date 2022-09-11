@@ -1,0 +1,5 @@
+Transfer learning come in two basic forms:
+    1) feature based learning
+        Train word embeddings by running a different model, then using those features on a different task.
+    2) fine tuning
+        take an existing model/existing weights, tweak them a little bit to make them work on the specific task
