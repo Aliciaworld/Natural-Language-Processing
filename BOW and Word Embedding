@@ -25,7 +25,9 @@ One Hot Encoding, TF-IDF, Word2Vec, FastText are frequently used Word Embedding 
     IDF: Inverse Document Frequencey is the logarithm of the ratio of the total number of documents to the number of documents in which the target term occurs.
 3. Word2Vec(GloVe): unsupervised learning process. Unlabeled data is trained via artifical neural networks to create the word2vec model that generates word vectors.
     . CBOW(continuous bag of words) algorithm
+        the distributed representations of context are combined to predict the word in the middle.
     . skip-gram algorithm
+        the distributed representation of the input word is used to predict the context.
 4. FastText(Subword Model): working logic is similar to word2vec, the biggest difference is that is uses N-grams of words during training. In subword model, words with the same roots do share parameters.
     
 
