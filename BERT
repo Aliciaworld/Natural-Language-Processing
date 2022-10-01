@@ -12,4 +12,6 @@ BERT need the input to be decorated with extra metadata:
     1) Token embedding: [CLS] token is added to the input word, [SEP] token is inserted at the end of each sentence.
     2) Segment embedding: marker indciating sentence A or B is added to each token.
     3) Position embedding: positional embedding is added to each token to indicate its position in the sentence.
+    
+    
   
